@@ -217,6 +217,18 @@ samples/              a contract to test with
 
 ## Note
 
-LexScan is a document reviewer, not a lawyer. It reports what a document says
-and flags what looks dangerous; it does not give legal advice, and every output
-carries that disclaimer.
+LexScan is a document reviewer and a legal-information tool, not a lawyer. It
+reports what a document says, flags what looks dangerous, and explains what the
+law provides — it does not give legal advice, and every output carries that
+disclaimer.
+
+It is a project, not a service. If you run it for other people, the answers are
+yours to stand behind: verify section numbers against the bare Act on
+[indiacode.nic.in](https://www.indiacode.nic.in), check state rules against the
+state's own notifications, and send anything consequential to a qualified
+lawyer before someone acts on it.
+
+## License
+
+MIT — see [LICENSE](LICENSE). Use it, fork it, ship it; keep the copyright
+notice, and it comes with no warranty.
