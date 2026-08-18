@@ -1,0 +1,20 @@
+# Never let the real secrets into an image
+.env
+.env.local
+
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+.git/
+.gitignore
+
+# Runtime state — the container makes its own
+.chat_history/
+.files/
+
+*.wav
+*.log
+samples/_*
+README.md
