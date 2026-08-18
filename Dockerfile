@@ -23,10 +23,13 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-# Headless OpenCV first: rapidocr pulls the full build otherwise, which drags in
-# GUI libraries a server will never use.
-RUN pip install --no-cache-dir opencv-python-headless \
-    && pip install --no-cache-dir -r requirements.txt
+# rapidocr depends on opencv-python by name, so pip installs the full build no
+# matter what is installed first — and that one needs libGL, which a slim server
+# image does not have. Install normally, then swap in the headless build, which
+# is the same cv2 without the GUI bindings.
+RUN pip install --no-cache-dir -r requirements.txt \
+    && pip uninstall -y opencv-python \
+    && pip install --no-cache-dir opencv-python-headless
 
 COPY --chown=app:app . .
 

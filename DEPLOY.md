@@ -33,24 +33,64 @@ picking a host. **Option D keeps the guarantee.**
 
 ## Option A — Hugging Face Spaces (free, best value)
 
-Free CPU Spaces get 2 vCPU and 16 GB RAM, which is far more headroom than any
-other free tier, and they run Docker directly.
+Free CPU Spaces get 2 vCPU and 16 GB RAM — far more headroom than any other free
+tier — and run Docker directly. The Space config already lives in this README's
+frontmatter (`sdk: docker`, `app_port: 8000`), so there is nothing to configure
+in the Dockerfile.
 
-1. Create a Space at https://huggingface.co/new-space
-   - SDK: **Docker**, Hardware: **CPU basic (free)**
-   - Visibility: **Private** unless you want the world using it
-2. Push this repo to the Space:
-   ```bash
-   git remote add space https://huggingface.co/spaces/<you>/lexscan
-   git push space main
-   ```
-3. Settings → **Variables and secrets** → add as *secrets*:
-   `LOCAL_LLM_URL`, `LOCAL_LLM_SECRET`
-4. Spaces expose port 7860 — add to the Dockerfile or set as a variable:
-   `PORT=7860`
+**1. Log in to Hugging Face from the terminal**
+
+Create a token at https://huggingface.co/settings/tokens with **write** access,
+then:
+
+```bash
+venv\Scripts\hf auth login
+```
+
+**2. Create the Space**
+
+At https://huggingface.co/new-space:
+
+| Setting | Value |
+| --- | --- |
+| Owner | your account |
+| Space name | `lexscan` |
+| License | `mit` |
+| SDK | **Docker** → *Blank* |
+| Hardware | **CPU basic** (free) |
+| Visibility | **Private** — see the warning below |
+
+**3. Push the code**
+
+```bash
+git remote add space https://huggingface.co/spaces/<your-username>/lexscan
+git push space main
+```
+
+The build takes several minutes the first time — it installs the dependencies
+and bakes in the OCR and Whisper models. Watch the **Logs** tab.
+
+**4. Add the secrets**
+
+Space **Settings** → **Variables and secrets** → **New secret**:
+
+| Name | Value |
+| --- | --- |
+| `LOCAL_LLM_URL` | your full endpoint, path included |
+| `LOCAL_LLM_SECRET` | the bearer token |
+
+Add them as **secrets**, not variables — variables are visible to anyone who can
+see the Space. The Space restarts automatically once they are saved.
+
+**Make it private, or add auth.** A public Space with no authentication means
+anyone can spend your LLM quota, and strangers' documents pass through your
+endpoint. Private is one click; authentication is the better answer if you want
+others to use it.
 
 Good for: showing the project, internal testing.
-Watch for: free Spaces sleep when idle; the first visit after that is slow.
+Watch for: free Spaces sleep after ~48h idle, and your LLM endpoint must accept
+connections from Hugging Face's servers — not just from your network. That is
+the most likely reason a working local build fails once deployed.
 
 ---
 

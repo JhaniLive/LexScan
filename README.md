@@ -1,3 +1,14 @@
+---
+title: LexScan
+emoji: ⚖️
+colorFrom: indigo
+colorTo: purple
+sdk: docker
+app_port: 8000
+pinned: false
+short_description: AI legal document review and situation help for India
+---
+
 # LexScan
 
 Legal document review and situation help for India.
