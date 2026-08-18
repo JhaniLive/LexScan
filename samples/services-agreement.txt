@@ -1,0 +1,78 @@
+SERVICES AGREEMENT
+
+This Agreement is made on 3 March 2025 between:
+
+(1) NORTHWIND LTD, a company registered in England (No. 09876543) whose
+    registered office is at 14 Bishopsgate, London EC2N 3AR ("Client"); and
+(2) ORBIT STUDIO PRIVATE LIMITED, a company registered in India (CIN
+    U72900MH2019PTC123456) whose office is at Andheri East, Mumbai 400069
+    ("Supplier").
+
+1. SERVICES
+1.1 The Supplier shall provide website design, hosting and maintenance services
+    as described in Schedule 1 (the "Services").
+1.2 The Client may, by written notice, vary the scope of the Services. The
+    Supplier shall implement any such variation without additional charge where
+    the variation does not increase effort by more than 20%.
+
+2. TERM AND RENEWAL
+2.1 This Agreement commences on 1 April 2025 and continues for an initial term
+    of twelve (12) months.
+2.2 It shall renew automatically for successive twelve (12) month terms unless
+    either party gives written notice of non-renewal not less than ninety (90)
+    days before the end of the then-current term.
+
+3. FEES AND PAYMENT
+3.1 The Client shall pay INR 2,00,000 per month, invoiced monthly in arrears.
+3.2 Invoices are payable within fifteen (15) days of receipt.
+3.3 Late payment carries interest at 18% per annum, accruing daily.
+3.4 Fees may be increased by the Supplier once per year on thirty (30) days
+    notice, by no more than 10%.
+
+4. TERMINATION
+4.1 The Client may terminate this Agreement for convenience at any time on
+    thirty (30) days written notice.
+4.2 The Supplier may terminate only where the Client commits a material breach
+    which remains uncured sixty (60) days after written notice.
+4.3 On termination, the Client shall pay for Services performed up to the
+    termination date. No refund of prepaid fees shall be made.
+
+5. INTELLECTUAL PROPERTY
+5.1 All intellectual property created by the Supplier in performing the
+    Services, together with all pre-existing tools, libraries and know-how
+    incorporated into the deliverables, shall vest in the Client absolutely on
+    creation.
+
+6. CONFIDENTIALITY
+6.1 Each party shall keep the other's confidential information secret for a
+    period of three (3) years from disclosure.
+
+7. LIABILITY
+7.1 The Supplier's total aggregate liability under this Agreement shall not
+    exceed one (1) month's fees.
+7.2 The Client's liability under this Agreement is not limited.
+7.3 Neither party excludes liability for death, personal injury or fraud.
+
+8. INDEMNITY
+8.1 The Supplier shall indemnify and hold harmless the Client against all
+    claims, losses, damages and costs arising out of or in connection with the
+    Services, howsoever caused.
+
+9. NON-SOLICITATION
+9.1 During the term and for twenty-four (24) months afterwards, the Supplier
+    shall not employ or engage any person employed by the Client.
+
+10. ASSIGNMENT
+10.1 The Client may assign this Agreement freely. The Supplier may not assign
+     or subcontract without the Client's prior written consent.
+
+11. NOTICES
+11.1 Notices shall be in writing and sent to the registered office of the
+     receiving party. Email is not valid service.
+
+12. GOVERNING LAW AND JURISDICTION
+12.1 This Agreement is governed by the laws of India.
+12.2 The courts at Mumbai shall have exclusive jurisdiction.
+
+SIGNED for and on behalf of Northwind Ltd:  ______________________
+SIGNED for and on behalf of Orbit Studio Private Limited: ______________________

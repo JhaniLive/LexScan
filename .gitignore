@@ -1,0 +1,26 @@
+# Secrets — never commit
+.env
+.env.local
+
+# Virtualenv
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Chainlit runtime state
+.chat_history/
+.files/
+
+# Scratch
+*.wav
+*.log
+samples/_*
+Thumbs.db
+.DS_Store
+
+# Chainlit regenerates these on start
+.chainlit/translations/

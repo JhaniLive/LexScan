@@ -1,0 +1,11 @@
+/* Pulsing animation for status/loading messages */
+@keyframes pulse-glow {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+}
+
+.loading-status {
+    animation: pulse-glow 1.5s ease-in-out infinite;
+    color: #a78bfa;
+    font-weight: 500;
+}

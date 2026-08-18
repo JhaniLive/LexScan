@@ -1,0 +1,20 @@
+chainlit==2.9.6
+httpx>=0.27
+python-dotenv>=1.0
+python-docx>=1.1
+
+# PDF text layer + page rendering for OCR
+pymupdf>=1.24
+
+# Local OCR for scans and photos — no vision model, no model server needed
+rapidocr-onnxruntime>=1.2
+
+# Image handling: format conversion, and .heic from iPhones
+pillow>=10.0
+pillow-heif>=0.16
+
+# Local speech-to-text for the mic button
+faster-whisper>=1.0
+
+# Live web lookup
+ddgs>=9.0
