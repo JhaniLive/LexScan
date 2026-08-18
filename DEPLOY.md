@@ -1,5 +1,11 @@
 # LexScan — Deployment Guide
 
+> **Free-tier reality check.** Platform free tiers move constantly and mostly in
+> one direction. Hugging Face made Docker Spaces PRO-only; Render's free tier is
+> 512 MB, which this app exceeds mid-scan. Anything here quoted as free is worth
+> re-checking before you commit to it. Option D depends on no platform's pricing
+> at all.
+
 ## What this app actually needs
 
 Measured on a full load, all models resident:
@@ -31,12 +37,15 @@ picking a host. **Option D keeps the guarantee.**
 
 ---
 
-## Option A — Hugging Face Spaces (free, best value)
+## Option A — Hugging Face Spaces (PRO subscription required)
 
-Free CPU Spaces get 2 vCPU and 16 GB RAM — far more headroom than any other free
-tier — and run Docker directly. The Space config already lives in this README's
-frontmatter (`sdk: docker`, `app_port: 8000`), so there is nothing to configure
-in the Dockerfile.
+**Not free any more.** Hugging Face now restricts Gradio and Docker Spaces to
+paid PRO accounts; only Static Spaces remain free, and a Static Space serves
+files — it cannot run Python, so it cannot run this.
+
+With PRO (~$9/month) the steps below work as written, and the Space config is
+already in this README's frontmatter (`sdk: docker`, `app_port: 8000`).
+Otherwise skip to **Option D**, which costs nothing.
 
 **1. Log in to Hugging Face from the terminal**
 
